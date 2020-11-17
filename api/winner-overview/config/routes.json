@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/winner-overviews",
+      "handler": "winner-overview.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/winner-overviews/count",
+      "handler": "winner-overview.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/winner-overviews/:id",
+      "handler": "winner-overview.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/winner-overviews",
+      "handler": "winner-overview.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/winner-overviews/:id",
+      "handler": "winner-overview.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/winner-overviews/:id",
+      "handler": "winner-overview.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "winner_overviews",
+  "info": {
+    "name": "Winner overview"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "month": {
+      "type": "string",
+      "required": true
+    },
+    "Vinder": {
+      "type": "string",
+      "required": true
+    },
+    "Noter": {
+      "type": "text",
+      "maxLength": 500
+    }
+  }
+}

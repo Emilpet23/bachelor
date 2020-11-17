@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "boards",
+  "info": {
+    "name": "Board"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "month": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "votes": {
+      "via": "board",
+      "collection": "votes"
+    }
+  }
+}
