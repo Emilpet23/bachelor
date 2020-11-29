@@ -1,0 +1,25 @@
+<template>
+    <div>
+        <Navigation></Navigation>
+        <Boardlist></Boardlist>
+        <PostBoard></PostBoard>
+    </div>
+</template>
+
+<script>
+import PostBoard from "@/components/PostBoard.vue";
+import Boardlist from "@/components/Boardlist.vue";
+import Navigation from '@/components/Navigation.vue';
+
+    export default {
+        components: {
+            Boardlist,
+            PostBoard,
+            Navigation
+        }
+    }
+</script>
+
+<style lang="scss" scoped>
+
+</style>
