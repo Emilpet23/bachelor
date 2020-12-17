@@ -1,8 +1,12 @@
 <template>
     <div>
         <Navigation></Navigation>
-        <Boardlist></Boardlist>
-        <PostBoard></PostBoard>
+        <h1>Boards</h1>
+        <div class="flex-it">
+            <Boardlist></Boardlist>
+            <PostBoard></PostBoard>
+        </div>
+        
     </div>
 </template>
 

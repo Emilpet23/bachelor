@@ -1,20 +1,20 @@
 <template>
-<div id="app">
+<div id="post">
   <div v-if="error">
     {{ error }}
   </div>
 
   <form id="form" v-on:submit="handleSubmit" v-else>
     <label for="name">Måned</label>
-    <input id="name" v-model="modifiedData.month" type="text" name="name">
+    <input id="name" v-model="modifiedData.month" type="text" name="name" placeholder="Hvilken måned har de vundet?">
 
     <label for="description">Vinder</label>
-    <input id="description" v-model="modifiedData.Vinder" type="text" name="description">
+    <input id="description" v-model="modifiedData.Vinder" type="text" name="description" placeholder="Hvem vandt?">
 
     <label for="date">Noter</label>
-    <input id="date" v-model="modifiedData.Noter" type="text" name="date">
+    <input id="date" v-model="modifiedData.Noter" type="text" name="date" placeholder="Hvad blev der skrevet om personen?">
 
-    <input type="submit" value="Submit">
+    <button type="submit" value="Submit" class="button button--green">asdasd</button>
   </form>
 
 </div>
@@ -24,7 +24,7 @@
 import axios from 'axios'
 
 export default {
-  name: 'App',
+  name: 'Post',
   data() {
     return {
       modifiedData: {
@@ -38,7 +38,7 @@ export default {
   async mounted() {
     try {
       const response = await axios.get('http://localhost:8947/winner-overviews')
-      this.allCategories = response.data;
+      this.winner = response.data;
     } catch (error) {
       this.error = error;
     }

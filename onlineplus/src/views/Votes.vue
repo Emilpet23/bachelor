@@ -1,8 +1,11 @@
 <template>
     <div>
         <Navigation></Navigation>
-        <Vote></Vote>
-        <PostVotes></PostVotes>
+        <h1>Stem her!</h1>
+        <div class="flex-it">
+            <Vote></Vote>
+            <PostVotes></PostVotes>
+        </div> 
     </div>
 </template>
 
@@ -21,5 +24,4 @@ import Navigation from '@/components/Navigation.vue';
 </script>
 
 <style lang="scss" scoped>
-
 </style>

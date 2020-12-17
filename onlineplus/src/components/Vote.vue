@@ -5,13 +5,13 @@
     </div>
     <table v-else class="table">
         <thead>
-            <tr>
+            <tr class="table__head">
                 <th>Navn</th>
                 <th>Note</th>
             </tr>
         </thead>
         <tbody>
-            <tr v-for="vote in votes" :key="vote.id">
+            <tr class="table__body" v-for="vote in votes" :key="vote.id">
                 <td>{{ vote.name }}</td>
                 <td>{{ vote.description }}</td>
             </tr>

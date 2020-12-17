@@ -1,20 +1,20 @@
 <template>
-<div id="app">
+<div id="post">
   <div v-if="error">
     {{ error }}
   </div>
 
   <form id="form" v-on:submit="handleSubmit" v-else>
     <label for="name">Navn</label>
-    <input id="name" v-model="modifiedData.title" type="text" name="name">
+    <input id="title" v-model="modifiedData.title" type="text" name="title" placeholder="Indtast titel på boardet">
 
     <label for="description">Måned</label>
-    <input id="description" v-model="modifiedData.month" type="text" name="description">
+    <input id="month" v-model="modifiedData.month" type="text" name="month" placeholder="Indtast måned på boardet">
 
-    <label for="date">Dato</label>
+    <label for="date">Deadline</label>
     <input id="date" v-model="modifiedData.date" type="date" name="date">
 
-    <input type="submit" value="Submit">
+    <button type="submit" value="Submit" class="button button--green">asdasd</button>
   </form>
 
 </div>
@@ -24,7 +24,7 @@
 import axios from 'axios'
 
 export default {
-  name: 'App',
+  name: 'Post',
   data() {
     return {
       modifiedData: {
@@ -38,7 +38,7 @@ export default {
   async mounted() {
     try {
       const response = await axios.get('http://localhost:8947/boards')
-      this.allCategories = response.data;
+      this.boards = response.data;
     } catch (error) {
       this.error = error;
     }

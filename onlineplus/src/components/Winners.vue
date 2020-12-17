@@ -1,19 +1,18 @@
 <template>
   <div id="winners">
-      <h1>Tidligere vindere</h1>
   <div v-if="error">
       {{ error }}
     </div>
     <table v-else class="table">
         <thead>
-            <tr>
+            <tr class="table__head">
                 <th>Måned</th>
                 <th>Vinder</th>
                 <th>Noter</th>
             </tr>
         </thead>
         <tbody>
-            <tr v-for="winner in winners" :key="winner.id">
+            <tr class="table__body" v-for="winner in winners" :key="winner.id">
                 <td>{{ winner.month }}</td>
                 <td>{{ winner.Vinder }}</td>
                 <td>{{ winner.Noter }}</td>

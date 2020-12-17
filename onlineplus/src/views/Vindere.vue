@@ -1,8 +1,12 @@
 <template>
     <div>
         <Navigation></Navigation>
-        <Winners></Winners>
-        <PostWinner></PostWinner>
+        <h1>Tidligere vindere</h1>
+        <div class="flex-it">
+            <Winners></Winners>
+            <PostWinner></PostWinner>
+        </div>
+        
     </div>
 </template>
 

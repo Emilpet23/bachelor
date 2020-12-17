@@ -1,0 +1,16 @@
+.button {
+  padding: 10px 30px;
+  text-decoration: none;
+  width: 250px;
+  &--link {
+    background: $link;
+    color: $white;
+  }
+  &--green {
+    background: $green;
+    color: $white;
+    border: none;
+    position: relative;
+    width: 100%;
+  }
+}

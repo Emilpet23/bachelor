@@ -1,0 +1,17 @@
+.table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: $box-shadow;
+
+  th,
+  td {
+    text-align: start;
+    padding: 15px 30px;
+    border-bottom: 1px solid $black;
+  }
+
+  a {
+    text-decoration: none;
+    color: $link;
+  }
+}

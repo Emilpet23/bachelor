@@ -1,7 +1,9 @@
 <template>
   <div>
-    <h1>About</h1>
     <Navigation></Navigation>
+
+    <h1>Guide</h1>
+    <p></p>
   </div>
 </template>
 
@@ -10,7 +12,7 @@ import Navigation from '@/components/Navigation.vue';
 
     export default {
         components: {
-            Navigation
+            Navigation,
         }
     }
 </script>

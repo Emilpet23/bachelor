@@ -1,18 +1,18 @@
 <template>
-  <div id="votes">
+  <div id="boards">
     <div v-if="error">
       {{ error }}
     </div>
     <table class="table">
       <thead>
-        <tr>
+        <tr class="table__head">
           <th>Titel</th>
           <th>Måned</th>
-          <th>Dato</th>
+          <th>Deadline</th>
         </tr>
       </thead>
       <tbody>
-        <tr v-for="board in boards" :key="board.id">
+        <tr class="table__body" v-for="board in boards" :key="board.id">
           <td><router-link to="/votes">{{ board.title }}</router-link></td>
           <td>{{ board.month }}</td>
           <td>{{ board.date }}</td>

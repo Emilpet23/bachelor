@@ -5,13 +5,13 @@
   <h1>Login her</h1>
 
   <form id="login" v-on:submit="handleSubmit">
-    <label for="identifier">Brugernavn/E-mail</label>
-    <input id="identifier" v-model="modifiedData.identifier" type="text" name="identifier">
+    <label for="identifier">Brugernavn</label>
+    <input id="identifier" v-model="modifiedData.identifier" type="text" name="identifier" placeholder="Indtast dit brugernavn her">
 
     <label for="password">Kode</label>
-    <input id="password" v-model="modifiedData.password" type="password" name="password">
+    <input id="password" v-model="modifiedData.password" type="password" name="password" placeholder="Indtast din kode her">
 
-    <router-link to="/about">Login</router-link>
+    <router-link to="/about" class="button button--link">Login</router-link>
     <!-- <input type="submit" value="Submit"> -->
   </form>
 
@@ -62,31 +62,7 @@ export default {
     }
   }
 }
-
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
 
 
 
