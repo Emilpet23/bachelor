@@ -14,7 +14,7 @@
     <label for="date">Noter</label>
     <input id="date" v-model="modifiedData.Noter" type="text" name="date" placeholder="Hvad blev der skrevet om personen?">
 
-    <button type="submit" value="Submit" class="button button--green">asdasd</button>
+    <button type="submit" value="Submit" class="button button--green">Submit</button>
   </form>
 
 </div>

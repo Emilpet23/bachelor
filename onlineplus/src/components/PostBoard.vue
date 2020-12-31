@@ -14,7 +14,7 @@
     <label for="date">Deadline</label>
     <input id="date" v-model="modifiedData.date" type="date" name="date">
 
-    <button type="submit" value="Submit" class="button button--green">asdasd</button>
+    <button type="submit" value="Submit" class="button button--green">Submit</button>
   </form>
 
 </div>

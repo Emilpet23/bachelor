@@ -6,8 +6,7 @@
         <div class="nav__bar">
             <router-link to="/about">Guide</router-link>
             <router-link to="/vindere">Vindere</router-link>
-            <router-link to="/votes">Stemmer</router-link>
-            <router-link to="/board">Board</router-link>
+            <router-link to="/board">Stem her</router-link>
             <router-link to="/">Log ud</router-link>
         </div>
       

@@ -11,7 +11,7 @@
     <label for="description">Noter</label>
     <input id="description" v-model="modifiedData.description" type="text" name="description" placeholder="Indtast beskrivelse">
 
-    <button type="submit" value="Submit" class="button button--green">asdasd</button>
+    <button type="submit" value="Submit" class="button button--green">Submit</button>
   </form>
 
 </div>

@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "winner_overviews",
   "info": {
-    "name": "Winner overview"
+    "name": "Winner overview",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -21,6 +22,9 @@
     "Noter": {
       "type": "text",
       "maxLength": 500
+    },
+    "votes": {
+      "collection": "votes"
     }
   }
 }
